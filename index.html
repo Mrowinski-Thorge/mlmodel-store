@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.mlmodel store - Fertige Core ML Modelle für deine App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons API -->
+    <script src="https://unpkg.com/lucide-react@0.294.0/dist/lucide-react.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container">
+            <div class="logo">.mlmodel <strong>store</strong></div>
+            <div class="nav-links">
+                <a href="#info">Info</a>
+                <a href="terms.html">Nutzung</a>
+                <a href="#" class="button-secondary">Modell einreichen</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">KI für deine App. Fertig zum Download.</h1>
+                <p class="hero-subtitle animate-on-scroll">Eine kuratierte Sammlung von `.mlmodel`-Dateien, optimiert für die Apple Neural Engine. Direkt in Xcode integrieren.</p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#models" class="button-primary">Modelle entdecken</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stacked Cards Model Section -->
+        <section id="models" class="stacked-cards-section">
+            <div class="stacked-cards-container">
+                
+                <!-- Card 1 -->
+                <div class="model-card card-1">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <i data-lucide="scan-line"></i>
+                            <h3>Objekterkennung (YOLOv8)</h3>
+                        </div>
+                        <p class="card-description">Erkennt 80 gängige Objekte in Echtzeit. Optimiert für hohe Geschwindigkeit auf iOS-Geräten.</p>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag tag-vision">Vision</span><span class="tag">Real-Time</span></div>
+                            <a href="https://github.com/Mrowinski-Thorge/ml-models/raw/main/YOLOv8.mlmodel" class="button-download" download><i data-lucide="download"></i>Laden</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="model-card card-2">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <i data-lucide="smile-plus"></i>
+                            <h3>Sentiment-Analyse</h3>
+                        </div>
+                        <p class="card-description">Klassifiziert Texte als positiv, negativ oder neutral. Ideal für Produkt-Reviews oder Social Media.</p>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag tag-text">Text</span><span class="tag">NLP</span></div>
+                            <a href="https://github.com/Mrowinski-Thorge/ml-models/raw/main/SentimentAnalysis.mlmodel" class="button-download" download><i data-lucide="download"></i>Laden</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="model-card card-3">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <i data-lucide="scissors"></i>
+                            <h3>Bild-Segmentierung</h3>
+                        </div>
+                        <p class="card-description">Trennt den Vordergrund (Personen) vom Hintergrund. Perfekt für Kamera-Effekte in Echtzeit.</p>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag tag-vision">Vision</span><span class="tag">Portrait</span></div>
+                            <a href="https://github.com/Mrowinski-Thorge/ml-models/raw/main/ImageSegmentation.mlmodel" class="button-download" download><i data-lucide="download"></i>Laden</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="model-card card-4">
+                     <div class="card-content">
+                        <div class="card-header">
+                            <i data-lucide="palette"></i>
+                            <h3>Stil-Transfer (Artistic)</h3>
+                        </div>
+                        <p class="card-description">Wandelt Fotos in Kunstwerke um. Leichtgewichtig, schnell und ideal für kreative Foto-Apps.</p>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag tag-vision">Vision</span><span class="tag">Style</span></div>
+                            <a href="https://github.com/Mrowinski-Thorge/ml-models/raw/main/StyleTransfer.mlmodel" class="button-download" download><i data-lucide="download"></i>Laden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section id="info" class="info-section">
+            <div class="container animate-on-scroll">
+                <i data-lucide="info" class="info-icon"></i>
+                <h2>Was ist der .mlmodel store?</h2>
+                <p>Diese Plattform ist ein Community-Projekt, um Entwicklern den Einstieg in Core ML zu erleichtern. Statt Modelle selbst zu trainieren, kannst du hier fertige, optimierte `.mlmodel`-Dateien herunterladen und direkt in deine Apps für iPhone, iPad und Mac integrieren. Alle Modelle sind kostenlos und dürfen auch in kommerziellen Projekten verwendet werden, wie in den <a href="terms.html">Nutzungsbedingungen</a> beschrieben. Es ist Open Source für die KI-Entwicklung auf Apple-Plattformen.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mrowinski-Thorge. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="terms.html">Nutzungsbedingungen</a>
+                <a href="https://github.com/Mrowinski-Thorge" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
