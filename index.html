@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mlmodel Store</title>
+    <title>Core ML Model Store</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Import SF Symbols -->
-    <link rel="stylesheet" href="https://unpkg.com/@sfac/sf-font/css/sf-font.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>mlmodel Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
-                <li><a href="datenschutz.html">Datenschutz</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Core ML Model Store</h1>
+            <p>Eine kuratierte Sammlung von Core ML-Modellen, bereit zum Download für Ihre Apple-Plattform-Apps.</p>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <h2>Willkommen im mlmodel Store</h2>
-            <p>Eine kuratierte Sammlung von Core ML-Modellen zum direkten Download. Alle Modelle sind kostenlos, für kommerzielle Projekte nutzbar und optimiert für iOS, iPadOS und macOS.</p>
-        </section>
+    <section class="info-section">
+        <div class="container">
+            <h2>Was sind .mlmodel Dateien?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i data-feather="cpu" class="icon"></i>
+                    <h3>Optimiert für Apple-Geräte</h3>
+                    <p>.mlmodel ist das Format für Core ML. Modelle in diesem Format laufen extrem schnell und effizient auf iPhone, iPad und Mac.</p>
+                </div>
+                <div class="info-item">
+                    <i data-feather="shield" class="icon"></i>
+                    <h3>Datenschutz im Fokus</h3>
+                    <p>Da die Modelle direkt auf dem Gerät des Nutzers ausgeführt werden, bleiben alle Daten privat. Es ist keine Serververbindung nötig.</p>
+                </div>
+                <div class="info-item">
+                    <i data-feather="box" class="icon"></i>
+                    <h3>Einfache Integration</h3>
+                    <p>Entwickler können .mlmodel-Dateien mit nur wenigen Zeilen Code in ihre Xcode-Projekte integrieren.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="models">
-            <h2>Verfügbare Modelle</h2>
-            <div class="model-card">
-                <h3>Fruit Classifier</h3>
-                <p>Ein Modell zur Erkennung verschiedener Früchte.</p>
-                <a href="ML_Models/Image_Classifier/Fruit_Recognizer.mlmodel" class="download-btn" download>Herunterladen</a>
+    <main>
+        <div class="container">
+            <div class="search-wrapper">
+                <i data-feather="search" class="search-icon"></i>
+                <input type="text" id="search-input" placeholder="Modelle durchsuchen...">
             </div>
-            <div class="model-card">
-                <h3>Apple & Carrot Classifier</h3>
-                <p>Ein Modell, das Äpfel und Karotten voneinander unterscheiden kann.</p>
-                <a href="ML_Models/AppleAndCarrotClassifier.mlmodel" class="download-btn" download>Herunterladen</a>
+            <div id="model-container" class="model-grid">
+                <!-- Modelle werden hier von script.js eingefügt -->
             </div>
-        </section>
+            <p id="no-results-message" class="no-results" style="display: none;">Keine Modelle für Ihre Suche gefunden.</p>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 mlmodel Store</p>
+        <div class="container">
+            <p>&copy; 2024 Mrowinski-Thorge. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
